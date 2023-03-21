@@ -9,4 +9,4 @@ resources:
 - olo-og.yaml
 - olo-sub.yaml
 - olo-instance.yaml
-#- clf-instance.yaml
+- clf-instance.yaml
