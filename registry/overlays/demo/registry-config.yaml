@@ -3,7 +3,7 @@ kind: Config
 metadata:
   name: cluster
   annotations:
-    argocd.argoproj.io/sync-wave: "3"
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   managementState: Managed
   replicas: 1
@@ -12,3 +12,4 @@ spec:
     managementState: Unmanaged
     pvc:
       claim: image-registry-storage
+    s3: null

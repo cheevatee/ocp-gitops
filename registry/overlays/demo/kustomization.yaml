@@ -3,6 +3,5 @@ kind: Kustomization
 bases:
 - ../../base
 patches:
-- registry-config-removed.yaml
 - image-registry-storage.yaml
 - registry-config.yaml
