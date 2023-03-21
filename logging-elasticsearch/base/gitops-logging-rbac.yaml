@@ -3,12 +3,14 @@ kind: ClusterRole
 metadata:
   name: gitops-logging-role
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "0"
 rules:
   - apiGroups:
+      - ns
       - apiextensions.k8s.io
       - logging.openshift.io
     resources:
+      - namespaces
       - customresourcedefinitions
       - clusterloggings
       - clusterlogforwarders
@@ -23,7 +25,7 @@ kind: ClusterRoleBinding
 metadata:
   name: gitops-logging-rolebinding
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "0"
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
