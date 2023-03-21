@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: monitoring
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: ''
+    namespace: openshift-monitoring
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: monitoring/overlays/demo
+    repoURL: 'https://github.com/cheevatee/ocp-gitops'
+    targetRevision: main
+  sources: []
+  project: default
+  syncPolicy:
+    syncOptions:
+      - Replace=true
+      - PruneLast=true
+      - ApplyOutOfSyncOnly=true
+    automated:
+      prune: true
+      selfHeal: true
