@@ -3,5 +3,6 @@ kind: Kustomization
 bases:
 - ../../base
 patches:
+- gitops-logging-rbac.yaml
 - olo-instance.yaml
 - clf-instance.yaml
