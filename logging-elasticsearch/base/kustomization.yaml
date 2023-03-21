@@ -4,9 +4,9 @@ resources:
 - gitops-logging-rbac.yaml
 - eo-namespace.yaml
 - olo-namespace.yaml
-- eo-og.yaml
-- eo-sub.yaml
-- olo-og.yaml
-- olo-sub.yaml
-- olo-instance.yaml
-- clf-instance.yaml
+#- eo-og.yaml
+#- eo-sub.yaml
+#- olo-og.yaml
+#- olo-sub.yaml
+#- olo-instance.yaml
+#- clf-instance.yaml
