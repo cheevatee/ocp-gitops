@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: registry
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: ''
+    namespace: openshift-image-registry
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: registry/overlays/demo
+    repoURL: 'https://github.com/cheevatee/ocp-gitops'
+    targetRevision: main
+  sources: []
+  project: default
+  syncPolicy:
+    syncOptions:
+      - Replace=true
+      - PruneLast=true
+      - ApplyOutOfSyncOnly=true
+    automated:
+      prune: true
+      selfHeal: true
