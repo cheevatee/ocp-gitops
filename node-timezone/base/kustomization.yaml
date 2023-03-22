@@ -1,7 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- gitops-machineconfig-rbac.yaml
 - 99-master-timezone.yaml
 - 99-worker-timezone.yaml
 - mcp-master-status.yaml

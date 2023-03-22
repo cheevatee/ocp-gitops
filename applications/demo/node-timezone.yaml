@@ -19,6 +19,7 @@ spec:
       - Replace=false
       - PruneLast=true
       - ApplyOutOfSyncOnly=true
+      - FailOnSharedResource=true
     automated:
       prune: true
       selfHeal: true

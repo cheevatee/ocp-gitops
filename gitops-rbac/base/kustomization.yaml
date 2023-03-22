@@ -1,0 +1,6 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- gitops-image-registry-rbac.yaml
+- gitops-logging-rbac.yaml
+- gitops-machineconfig-rbac.yaml 
