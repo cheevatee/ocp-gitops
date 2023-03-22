@@ -16,7 +16,7 @@ spec:
   project: default
   syncPolicy:
     syncOptions:
-      - Replace=true
+      - Replace=false
       - PruneLast=true
       - ApplyOutOfSyncOnly=true
     automated:
