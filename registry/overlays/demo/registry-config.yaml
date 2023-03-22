@@ -5,6 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "1"
 spec:
+  defaultRoute: true
   managementState: Managed
   replicas: 1
   rolloutStrategy: Recreate

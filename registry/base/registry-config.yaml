@@ -3,6 +3,7 @@ kind: Config
 metadata:
   name: cluster
 spec:
+  defaultRoute: false
   managementState: Removed
   replicas: 2
   rolloutStrategy: RollingUpdate
