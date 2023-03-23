@@ -5,7 +5,7 @@ resources:
 - olo-namespace.yaml
 - eo-og.yaml
 - eo-sub.yaml
-- olo-og.yaml
-- olo-sub.yaml
-- olo-instance.yaml
-- clf-instance.yaml
+#- olo-og.yaml
+#- olo-sub.yaml
+#- olo-instance.yaml
+#- clf-instance.yaml
