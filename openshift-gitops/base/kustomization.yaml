@@ -2,6 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - openshift-gitops-sub.yaml
+- gitops-namespace-rbac.yaml
 - gitops-operator-rbac.yaml
 - gitops-image-registry-rbac.yaml
 - gitops-logging-rbac.yaml
