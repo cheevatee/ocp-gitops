@@ -4,4 +4,4 @@ bases:
 - ../../base
 patches:
 - olo-instance.yaml
-#- clf-instance.yaml
+- clf-instance.yaml
