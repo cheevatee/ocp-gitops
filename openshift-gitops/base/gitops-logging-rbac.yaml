@@ -6,7 +6,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "0"
 rules:
   - apiGroups:
-      - ns
+      - ""
       - apiextensions.k8s.io
       - logging.openshift.io
     resources:
