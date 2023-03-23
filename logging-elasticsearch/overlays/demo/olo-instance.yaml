@@ -19,7 +19,7 @@ spec:
     elasticsearch:
       nodeCount: 1 
       storage:
-        storageClassName: "gp2" 
+        storageClassName: "gp3-csi" 
         size: 200G
       resources: 
         requests:
