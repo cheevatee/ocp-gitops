@@ -4,8 +4,10 @@ resources:
 - eo-namespace.yaml
 - eo-og.yaml
 - eo-sub.yaml
+- elasticsearch-operator-status.yaml
 - olo-namespace.yaml
 - olo-og.yaml
 - olo-sub.yaml
+- cluster-logging-operator-status.yaml
 - olo-instance.yaml
 - clf-instance.yaml
