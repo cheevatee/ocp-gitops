@@ -1,0 +1,39 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+  name: cluster-logging-operator-status
+  namespace: openshift-gitops
+spec:
+  template:
+    spec:
+      containers:
+        - image: registry.redhat.io/openshift4/ose-cli:latest
+          command:
+            - /bin/bash
+            - -c
+            - |
+              export HOME=/tmp/cluster-logging-operator
+              echo ""
+              echo -n "Waiting for the cluster-logging-operator to converge."
+              sleep $SLEEP
+              until oc wait --for=condition=ready pod -l name=cluster-logging-operator -n openshift-logging --timeout=60s
+              do
+                echo -n "...still waiting for cluster-logging-operator to converge"
+                sleep $SLEEP
+              done
+              echo "DONE"
+          imagePullPolicy: Always
+          name: cluster-logging-operator
+          env:
+          - name: SLEEP
+            value: "5"
+      dnsPolicy: ClusterFirst
+      restartPolicy: OnFailure
+      serviceAccount: openshift-gitops-argocd-application-controller
+      serviceAccountName: openshift-gitops-argocd-application-controller
+      terminationGracePeriodSeconds: 30
