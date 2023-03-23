@@ -7,5 +7,5 @@ resources:
 - eo-sub.yaml
 - olo-og.yaml
 - olo-sub.yaml
-#- olo-instance.yaml
+- olo-instance.yaml
 #- clf-instance.yaml
