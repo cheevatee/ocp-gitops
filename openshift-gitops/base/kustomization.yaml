@@ -5,3 +5,4 @@ resources:
 - gitops-image-registry-rbac.yaml
 - gitops-logging-rbac.yaml
 - gitops-machineconfig-rbac.yaml 
+- gitops-template-rbac.yaml
