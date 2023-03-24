@@ -3,6 +3,8 @@ kind: Template
 metadata:
   creationTimestamp: null
   name: project-request
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
   namespace: openshift-config
 objects:
 - apiVersion: project.openshift.io/v1
