@@ -14,7 +14,7 @@ To apply these changes to your environment, please copy or duplicate the 'overla
 - registry - Configuring block registry storage.
 - monitoring - Creating a cluster monitoring config map and Configuring persistent storage for the monitoring stack.
 - logging elasticsearch - Install OpenShift Elasticsearch, cluster-logging operators and Creating clusterLogging, clusterLogForwarder 
-- project template -
+- project template - Create a template for the creation of new projects.
 - chrony time service - Configuring chrony time service for sync time with NTP servers.
 - node timezone - Configuring timezone for nodes
 
