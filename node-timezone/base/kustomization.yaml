@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
 - 99-master-timezone.yaml
 - 99-worker-timezone.yaml
-- mcp-master-status.yaml
-- mcp-worker-status.yaml
+#- mcp-master-status.yaml
+#- mcp-worker-status.yaml

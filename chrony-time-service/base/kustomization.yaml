@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
 - 99-master-chrony.yaml 
 - 99-worker-chrony.yaml
-- mcp-master-status.yaml
-- mcp-worker-status.yaml
+#- mcp-master-status.yaml
+#- mcp-worker-status.yaml
