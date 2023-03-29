@@ -191,4 +191,14 @@ persistentvolumeclaim/image-registry-storage   Bound    pvc-e5d4543e-abbc-4c5a-a
 $
 ```
 
+Example command for apply cluster configuration
 
+```
+$ cd ocp-gitops
+$ oc apply -k registry/overlays/demo/
+$ oc apply -k monitoring/overlays/demo/
+$ oc apply -k logging-elasticsearch/overlays/demo/
+$ oc apply -k project-template/overlays/demo/
+$ oc apply -k chrony-time-service/overlays/demo/
+$ oc apply -k node-timezone/overlays/demo/
+```
