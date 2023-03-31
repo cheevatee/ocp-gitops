@@ -7,6 +7,6 @@ resources:
 #- netobserv-namespace.yaml
 - lokistack.yaml
 - loki-netobserv-tenant-rbac.yaml
-- netobserv-og.yaml
+#- netobserv-og.yaml
 - netobserv-sub.yaml
 - netobserv-flowcollector.yaml
