@@ -3,10 +3,11 @@ kind: Kustomization
 resources:
 - ../../base
 patches:
-- olo-instance.yaml
-- clf-instance.yaml
-- target:
-    kind: Namespace
-  patch: |- 
-    - op: remove
-      path: /metadata/labels/app.kubernetes.io~1instance
+#- olo-instance.yaml
+#- clf-instance.yaml
+  - target:
+      kind: Namespace
+      name: openshift-operators-redhat
+    patch: |- 
+      - op: remove
+        path: /metadata/labels/app.kubernetes.io~1instance
