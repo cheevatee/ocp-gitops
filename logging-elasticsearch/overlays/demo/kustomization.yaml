@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
 - ../../base
 patches:
+- eo-namespace.yaml
 - olo-instance.yaml
 - clf-instance.yaml
 patches:
