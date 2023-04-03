@@ -4,7 +4,7 @@ resources:
 - ../../base
 patches:
 #- olo-instance.yaml
-#- clf-instance.yaml
+- clf-instance.yaml
   - target:
       kind: Namespace
       name: openshift-operators-redhat
