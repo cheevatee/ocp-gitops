@@ -3,8 +3,9 @@ kind: Kustomization
 resources:
 - ../../base
 patches:
-#- olo-instance.yaml
+- olo-instance.yaml
 - clf-instance.yaml
+patches:
   - target:
       kind: Namespace
       name: openshift-operators-redhat
