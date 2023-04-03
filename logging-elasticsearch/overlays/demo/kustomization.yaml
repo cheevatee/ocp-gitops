@@ -3,6 +3,8 @@ kind: Kustomization
 bases:
 - ../../base
 patches:
+- eo-namespace.yaml
+- eo-og.yaml
 - olo-instance.yaml
 - clf-instance.yaml
 - target:
