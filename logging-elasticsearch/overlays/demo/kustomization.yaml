@@ -3,17 +3,7 @@ kind: Kustomization
 bases:
 - ../../base
 patches:
-- eo-namespace.yaml
-- eo-og.yaml
 - olo-instance.yaml
 - clf-instance.yaml
-- target:
-    kind: OperatorGroup
-  patch: |- 
-    - op: remove
-      path: /metadata/labels/app.kubernetes.io~1instance
-- target:
-    kind: Namespace
-  patch: |-
-    - op: remove
-      path: /metadata/labels/app.kubernetes.io~1instance
+- op: remove
+  path: /metadata/labels/app.kubernetes.io~1instance
