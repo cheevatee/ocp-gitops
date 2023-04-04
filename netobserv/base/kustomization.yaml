@@ -4,7 +4,7 @@ resources:
 #- loki-namespace.yaml
 #- loki-og.yaml
 - loki-sub.yaml
-- netobserv-namespace.yaml
+#- netobserv-namespace.yaml
 - lokistack.yaml
 - loki-netobserv-tenant-rbac.yaml
 - netobserv-og.yaml
