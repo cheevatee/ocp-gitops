@@ -29,3 +29,7 @@ subjects:
 - kind: ServiceAccount
   name: flowlogs-pipeline              
   namespace: netobserv
+- kind: ServiceAccount
+  name: openshift-gitops-argocd-application-controller
+  namespace: openshift-gitops
+
