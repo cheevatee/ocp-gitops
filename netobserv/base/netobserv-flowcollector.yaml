@@ -20,6 +20,7 @@ spec:
       imagePullPolicy: IfNotPresent
       excludeInterfaces:
         - lo
+      interfaces: []
       kafkaBatchSize: 10485760
       cacheActiveTimeout: 5s
     ipfix:
