@@ -6,3 +6,4 @@ resources:
 - gitops-logging-rbac.yaml
 - gitops-machineconfig-rbac.yaml 
 - gitops-template-rbac.yaml
+- gitops-lokistack-flowcollector-netobserv-rbac.yaml
